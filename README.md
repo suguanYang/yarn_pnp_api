@@ -1,0 +1,1 @@
+seems like yarn pnp loader is rely on the `moduleExports`, but it dose not works with `register(script.js)` since the script is running in a different thread

@@ -1,0 +1,8 @@
+{
+    "name": "pnp_api_test",
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "packageManager": "yarn@4.1.0"
+}
