@@ -1,1 +1,14 @@
-seems like yarn pnp loader is rely on the `moduleExports`, but it dose not works with `register(script.js)` since the script is running in a different thread
+use yarn cli to run the script without any problem.
+```
+yarn node index_yarn.js
+```
+
+use node will throw MODULE_NOT_FOUND error.
+```
+node index_node.js
+```
+
+use node option to preload the loaders also works well
+```
+node -r ./.pnp.cjs --loader ./.pnp.loader.mjs index.js
+```
